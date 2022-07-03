@@ -1,0 +1,43 @@
+
+CREATE TABLE answers (
+	idAnswers varchar(100) DEFAULT NULL,
+	questions_id varchar(100) DEFAULT null,
+	`data` json DEFAULT NULL,
+	value_answers int(11),
+	PRIMARY KEY (idAnswers)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE students (
+	idStudents varchar(100) DEFAULT null,
+	exam_id varchar(100) DEFAULT null,
+	name varchar(255) DEFAULT NULL,
+	age int(11) DEFAULT null,
+	city varchar(100) DEFAULT null,
+	locale varchar(20) null,
+ 	PRIMARY KEY (idStudents)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+CREATE TABLE questions (
+	idQuestions varchar(100) DEFAULT NULL,
+	answer_id varchar(100) DEFAULT null,
+	`data` json DEFAULT NULL,
+	PRIMARY KEY (idQuestions),
+	KEY fk_answer_idx (answer_id)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+ALTER TABLE questions ADD CONSTRAINT fk_answer_idx FOREIGN KEY (answer_id) REFERENCES answers(idAnswers);
+
+
+CREATE TABLE exam (
+	idExam varchar(100) DEFAULT NULL,
+	question_id varchar(100) DEFAULT null,
+	student_id varchar(100) DEFAULT null,
+	`data` json DEFAULT NULL,
+	PRIMARY KEY (idExam),
+	KEY fk_question_idx (question_id),
+	KEY fk_students_idx (student_id)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+ALTER TABLE exam ADD CONSTRAINT fk_question_idx FOREIGN KEY (question_id) REFERENCES questions(idQuestions);
+ALTER TABLE exam ADD CONSTRAINT fk_students_idx FOREIGN KEY (student_id) REFERENCES students(idStudents);

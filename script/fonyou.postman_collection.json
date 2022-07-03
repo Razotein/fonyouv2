@@ -1,0 +1,560 @@
+{
+	"info": {
+		"_postman_id": "96d815d6-045d-4d3b-b238-2d2098f43454",
+		"name": "fonyou",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12540555"
+	},
+	"item": [
+		{
+			"name": "create student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"John Daoe\",\r\n    \"age\": 32,\r\n    \"city\": \"México\",\r\n    \"locale\": \"America/Mexico_City\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/fonyou/api/student",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"fonyou",
+						"api",
+						"student"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "create student",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"John Daoe\",\r\n    \"age\": 32,\r\n    \"city\": \"México\",\r\n    \"locale\": \"America/Mexico_City\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/fonyou/api/student",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"fonyou",
+								"api",
+								"student"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 03 Jul 2022 17:22:48 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"idStudents\": \"1fb663de-81c0-4fd1-af60-bd6eb8c2dea5\",\n    \"name\": \"John Daoe\",\n    \"age\": 32,\n    \"city\": \"México\",\n    \"locale\": \"America/Mexico_City\",\n    \"examId\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "create exam",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"examn\": [\r\n        {\r\n            \"numberQuestion\": \"Pregunta 1\",\r\n            \"listQuestion\": [\r\n                {\r\n                    \"question\": \"¿Esta es una pregunta 1?\",\r\n                    \"listAnswers\": [\r\n                        {\r\n                            \"answerOptions\": [\r\n                                {\r\n                                    \"A\": \"Opcion A\",\r\n                                    \"B\": \"Opcion B\",\r\n                                    \"C\": \"Opcion C\",\r\n                                    \"D\": \"Opcion D\"\r\n                                }\r\n                            ]\r\n                        }\r\n                    ]\r\n                }\r\n            ]\r\n        },\r\n        {\r\n            \"numberQuestion\": \"Pregunta 2\",\r\n            \"listQuestion\": [\r\n                {\r\n                    \"question\": \"¿Esta es una pregunta 2?\",\r\n                    \"listAnswers\": [\r\n                        {\r\n                            \"answerOptions\": [\r\n                                {\r\n                                    \"A\": \"Opcion A\",\r\n                                    \"B\": \"Opcion B\",\r\n                                    \"C\": \"Opcion C\",\r\n                                    \"D\": \"Opcion D\"\r\n                                }\r\n                            ]\r\n                        }\r\n                    ]\r\n                }\r\n            ]\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/fonyou/api/exam",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"fonyou",
+						"api",
+						"exam"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "create exam",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"examn\": [\r\n        {\r\n            \"numberQuestion\": \"Pregunta 1\",\r\n            \"listQuestion\": [\r\n                {\r\n                    \"question\": \"¿Esta es una pregunta 1?\",\r\n                    \"listAnswers\": [\r\n                        {\r\n                            \"answerOptions\": [\r\n                                {\r\n                                    \"A\": \"Opcion A\",\r\n                                    \"B\": \"Opcion B\",\r\n                                    \"C\": \"Opcion C\",\r\n                                    \"D\": \"Opcion D\"\r\n                                }\r\n                            ]\r\n                        }\r\n                    ]\r\n                }\r\n            ]\r\n        },\r\n        {\r\n            \"numberQuestion\": \"Pregunta 2\",\r\n            \"listQuestion\": [\r\n                {\r\n                    \"question\": \"¿Esta es una pregunta 2?\",\r\n                    \"listAnswers\": [\r\n                        {\r\n                            \"answerOptions\": [\r\n                                {\r\n                                    \"A\": \"Opcion A\",\r\n                                    \"B\": \"Opcion B\",\r\n                                    \"C\": \"Opcion C\",\r\n                                    \"D\": \"Opcion D\"\r\n                                }\r\n                            ]\r\n                        }\r\n                    ]\r\n                }\r\n            ]\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/fonyou/api/exam",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"fonyou",
+								"api",
+								"exam"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 03 Jul 2022 17:24:00 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"idExamn\": \"f70814eb-febf-423e-b17f-d8d74fda4478\",\n    \"data\": \"{\\\"examn\\\":[{\\\"numberQuestion\\\":\\\"Pregunta 1\\\",\\\"listQuestion\\\":[{\\\"question\\\":\\\"¿Esta es una pregunta 1?\\\",\\\"listAnswers\\\":[{\\\"answerOptions\\\":[{\\\"A\\\":\\\"Opcion A\\\",\\\"B\\\":\\\"Opcion B\\\",\\\"C\\\":\\\"Opcion C\\\",\\\"D\\\":\\\"Opcion D\\\"}]}]}]},{\\\"numberQuestion\\\":\\\"Pregunta 2\\\",\\\"listQuestion\\\":[{\\\"question\\\":\\\"¿Esta es una pregunta 2?\\\",\\\"listAnswers\\\":[{\\\"answerOptions\\\":[{\\\"A\\\":\\\"Opcion A\\\",\\\"B\\\":\\\"Opcion B\\\",\\\"C\\\":\\\"Opcion C\\\",\\\"D\\\":\\\"Opcion D\\\"}]}]}]}],\\\"valueAnswer\\\":null}\",\n    \"students\": null,\n    \"questions\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "exam assign",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"studentId\" : \"1fb663de-81c0-4fd1-af60-bd6eb8c2dea5\",\r\n    \"examnId\" : \"f70814eb-febf-423e-b17f-d8d74fda4478\"  \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/fonyou/api/exam/assign",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"fonyou",
+						"api",
+						"exam",
+						"assign"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "exam assign",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"studentId\" : \"1fb663de-81c0-4fd1-af60-bd6eb8c2dea5\",\r\n    \"examnId\" : \"f70814eb-febf-423e-b17f-d8d74fda4478\"  \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/fonyou/api/exam/assign",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"fonyou",
+								"api",
+								"exam",
+								"assign"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 03 Jul 2022 17:24:25 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"John Daoe\",\n    \"city\": \"México\",\n    \"takeExam\": \"2022-07-03\"\n}"
+				}
+			]
+		},
+		{
+			"name": "answer exam",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"examn\": [\r\n        {\r\n            \"numberQuestion\": \"Pregunta 1\",\r\n            \"listQuestion\": [\r\n                {\r\n                    \"question\": \"¿Esta es una pregunta 1?\",\r\n                    \"listAnswers\": [\r\n                        {\r\n                            \"answerOptions\": [\r\n                                {\r\n                                    \"A\": \"Opcion A\"\r\n                                }\r\n                            ]\r\n                        }\r\n                    ]\r\n                }\r\n            ]\r\n        },\r\n        {\r\n            \"numberQuestion\": \"Pregunta 2\",\r\n            \"listQuestion\": [\r\n                {\r\n                    \"question\": \"¿Esta es una pregunta 2?\",\r\n                    \"listAnswers\": [\r\n                        {\r\n                            \"answerOptions\": [\r\n                                {\r\n                                    \"C\": \"Opcion C\"\r\n                                }\r\n                            ]\r\n                        }\r\n                    ]\r\n                }\r\n            ]\r\n        }\r\n    ], \"valueAnswer\" : 50\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/fonyou/api/student/answer/exam?studentId=1fb663de-81c0-4fd1-af60-bd6eb8c2dea5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"fonyou",
+						"api",
+						"student",
+						"answer",
+						"exam"
+					],
+					"query": [
+						{
+							"key": "studentId",
+							"value": "1fb663de-81c0-4fd1-af60-bd6eb8c2dea5"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "answer exam",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"examn\": [\r\n        {\r\n            \"numberQuestion\": \"Pregunta 1\",\r\n            \"listQuestion\": [\r\n                {\r\n                    \"question\": \"¿Esta es una pregunta 1?\",\r\n                    \"listAnswers\": [\r\n                        {\r\n                            \"answerOptions\": [\r\n                                {\r\n                                    \"A\": \"Opcion A\"\r\n                                }\r\n                            ]\r\n                        }\r\n                    ]\r\n                }\r\n            ]\r\n        },\r\n        {\r\n            \"numberQuestion\": \"Pregunta 2\",\r\n            \"listQuestion\": [\r\n                {\r\n                    \"question\": \"¿Esta es una pregunta 2?\",\r\n                    \"listAnswers\": [\r\n                        {\r\n                            \"answerOptions\": [\r\n                                {\r\n                                    \"C\": \"Opcion C\"\r\n                                }\r\n                            ]\r\n                        }\r\n                    ]\r\n                }\r\n            ]\r\n        }\r\n    ], \"valueAnswer\" : 50\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/fonyou/api/student/answer/exam?studentId=1fb663de-81c0-4fd1-af60-bd6eb8c2dea5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"fonyou",
+								"api",
+								"student",
+								"answer",
+								"exam"
+							],
+							"query": [
+								{
+									"key": "studentId",
+									"value": "1fb663de-81c0-4fd1-af60-bd6eb8c2dea5"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "7"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 03 Jul 2022 17:26:04 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Success"
+				}
+			]
+		},
+		{
+			"name": "save correct questions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"examn\": [\r\n        {\r\n            \"numberQuestion\": \"Pregunta 1\",\r\n            \"listQuestion\": [\r\n                {\r\n                    \"question\": \"¿Esta es una pregunta 1?\",\r\n                    \"listAnswers\": [\r\n                        {\r\n                            \"answerOptions\": [\r\n                                {\r\n                                    \"A\": \"Opcion A\"\r\n                                }\r\n                            ]\r\n                        }\r\n                    ]\r\n                }\r\n            ]\r\n        },\r\n        {\r\n            \"numberQuestion\": \"Pregunta 2\",\r\n            \"listQuestion\": [\r\n                {\r\n                    \"question\": \"¿Esta es una pregunta 2?\",\r\n                    \"listAnswers\": [\r\n                        {\r\n                            \"answerOptions\": [\r\n                                {\r\n                                    \"C\": \"Opcion C\"\r\n                                }\r\n                            ]\r\n                        }\r\n                    ]\r\n                }\r\n            ]\r\n        }\r\n    ], \"valueAnswer\" : 50\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/fonyou/api/answer/correct?examId=f70814eb-febf-423e-b17f-d8d74fda4478",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"fonyou",
+						"api",
+						"answer",
+						"correct"
+					],
+					"query": [
+						{
+							"key": "examId",
+							"value": "f70814eb-febf-423e-b17f-d8d74fda4478"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "save correct questions",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"examn\": [\r\n        {\r\n            \"numberQuestion\": \"Pregunta 1\",\r\n            \"listQuestion\": [\r\n                {\r\n                    \"question\": \"¿Esta es una pregunta 1?\",\r\n                    \"listAnswers\": [\r\n                        {\r\n                            \"answerOptions\": [\r\n                                {\r\n                                    \"A\": \"Opcion A\"\r\n                                }\r\n                            ]\r\n                        }\r\n                    ]\r\n                }\r\n            ]\r\n        },\r\n        {\r\n            \"numberQuestion\": \"Pregunta 2\",\r\n            \"listQuestion\": [\r\n                {\r\n                    \"question\": \"¿Esta es una pregunta 2?\",\r\n                    \"listAnswers\": [\r\n                        {\r\n                            \"answerOptions\": [\r\n                                {\r\n                                    \"C\": \"Opcion C\"\r\n                                }\r\n                            ]\r\n                        }\r\n                    ]\r\n                }\r\n            ]\r\n        }\r\n    ], \"valueAnswer\" : 50\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/fonyou/api/answer/correct?examId=f70814eb-febf-423e-b17f-d8d74fda4478",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"fonyou",
+								"api",
+								"answer",
+								"correct"
+							],
+							"query": [
+								{
+									"key": "examId",
+									"value": "f70814eb-febf-423e-b17f-d8d74fda4478"
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 03 Jul 2022 17:27:00 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"0925d3af-5428-435b-80e7-1b332b073306\",\n    \"question\": \"4b004272-abc9-4197-80a5-b635c8903673\",\n    \"data\": \"{\\\"examn\\\":[{\\\"numberQuestion\\\":\\\"Pregunta 1\\\",\\\"listQuestion\\\":[{\\\"question\\\":\\\"¿Esta es una pregunta 1?\\\",\\\"listAnswers\\\":[{\\\"answerOptions\\\":[{\\\"A\\\":\\\"Opcion A\\\"}]}]}]},{\\\"numberQuestion\\\":\\\"Pregunta 2\\\",\\\"listQuestion\\\":[{\\\"question\\\":\\\"¿Esta es una pregunta 2?\\\",\\\"listAnswers\\\":[{\\\"answerOptions\\\":[{\\\"C\\\":\\\"Opcion C\\\"}]}]}]}],\\\"valueAnswer\\\":50}\",\n    \"valueAnswers\": 50\n}"
+				}
+			]
+		},
+		{
+			"name": "exam qualify",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/fonyou/api/exam/qualify?examId=f70814eb-febf-423e-b17f-d8d74fda4478",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"fonyou",
+						"api",
+						"exam",
+						"qualify"
+					],
+					"query": [
+						{
+							"key": "examId",
+							"value": "f70814eb-febf-423e-b17f-d8d74fda4478"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "exam qualify",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/fonyou/api/exam/qualify?examId=f70814eb-febf-423e-b17f-d8d74fda4478",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"fonyou",
+								"api",
+								"exam",
+								"qualify"
+							],
+							"query": [
+								{
+									"key": "examId",
+									"value": "f70814eb-febf-423e-b17f-d8d74fda4478"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 03 Jul 2022 17:59:02 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"score\": 50\n}"
+				}
+			]
+		}
+	]
+}
